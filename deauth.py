@@ -9,7 +9,7 @@ if (len(sys.argv) < 2):
     print("[!] I need the target BSSID and the COUNTER!")
     print(" ")
     print(" ")
-    print("[*] Example: python deauthattack.py aa:1V:3C:dd:ee:ff 1000")
+    print("[*] Example: python deauth.py aa:1V:3C:dd:ee:ff 1000")
     print(" ")
     quit()
 brdmac = "aa:bb:cc:dd:ee:ff"
