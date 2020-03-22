@@ -8,3 +8,13 @@ erreibar ist.
     Hier gibt es aber auch eine bestimmte Zahl an Bytes, die die Größe der Nachricht nicht überschreiten darf.
     
     
+Example (eigener Text):
+        
+        pkg = "ich bin eine große nachricht ahahhahahahahahahha"
+        msg = pkg.encode()
+    
+Example (mit Modul "random"):
+        
+        import random
+        msg = random._urandom(44)
+    
