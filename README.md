@@ -15,6 +15,9 @@ Example (eigener Text):
     
 Example (mit Modul "random"):
         
-        import random
+        import random #muss am anfang des Scripts eingefügt werden
         msg = random._urandom(44)
     
+
+Script mit Modul "random":
+
