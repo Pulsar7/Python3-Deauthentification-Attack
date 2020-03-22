@@ -4,4 +4,7 @@ Das Script greift auf das "Scapy" -Modul von Python3 zu und sendet bestimmte Pac
 erreibar ist.
 
 
-    Du kannst die dazugeörige Nachricht, die in Zeile 
+    Du kannst die dazugeörige Nachricht, die in Zeile 16 ist, ändern. Somit ist der Angriff effektiver.
+    Hier gibt es aber auch eine bestimmte Zahl an Bytes, die die Größe der Nachricht nicht überschreiten darf.
+    
+    
