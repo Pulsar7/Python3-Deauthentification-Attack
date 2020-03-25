@@ -1,6 +1,6 @@
 # Python3-Deauthentification-Attack
 Python3 Programming 
-Das Script greift auf das "Scapy" -Modul von Python3 zu und sendet bestimmte Packete zu einer BSSID, bis diese nicht mehr 
+Das Script greift auf das "Scapy" -Modul von Python3 zu und sendet bestimmte Packete zu einer BSSID-Addresse, bis diese nicht mehr 
 erreibar ist.
 
 
